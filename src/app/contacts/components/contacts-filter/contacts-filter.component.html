@@ -4,6 +4,11 @@
 			<select class="contacts-filter-form__select" formControlName="select">
 				<option value="option{{i}}" *ngFor="let option of selectOptions; let i = index">ММК им. Ильича</option>
 			</select>
+			<button class="contacts-filter-form__arrow" type="button">
+				<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M1.58714 2.49946e-07L0.462402 1.13514L5.28272 6L7.69288 3.56757L10.103 1.13514L8.9783 1.89245e-06L7.13051 1.86487L5.28272 3.72973L1.58714 2.49946e-07Z" fill="#ED1C24"/>
+				</svg>
+			</button>			
 		</div>
 		<div class="contacts-filter-form__container">
 			<input class="contacts-filter-form__input" type="text" placeholder="Введите ФИО, должность или номер телефона" formControlName="input">

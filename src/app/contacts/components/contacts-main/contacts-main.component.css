@@ -91,6 +91,7 @@ select:focus {
 
 .contacts-container {
   max-width: 1395px;
+  margin: 0 auto 1.45rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +102,18 @@ select:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto 23px;
   background-color: #ffffff;
+}
+
+@media (max-width: 1440px) {
+  .contacts-container {
+    margin: 0 1.5rem 1.45rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .contacts-container {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=contacts-main.component.css.map */

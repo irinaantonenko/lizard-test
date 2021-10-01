@@ -3,9 +3,7 @@
 @import '../../../../reset.scss';
 
 .contacts-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-c-c;
     padding: 24px 0;
     &__text {
         font-weight: bold;
@@ -19,9 +17,8 @@
         content: "";
         position: absolute;
         z-index: 2;
-        bottom: 0;       
-        color: #000;
+        bottom: 0;
         width: 1872px;        
-        height: 3px;
+        border-top: 3px solid $colorGrey;
     }
 }

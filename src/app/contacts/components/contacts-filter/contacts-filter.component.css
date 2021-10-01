@@ -1,0 +1,270 @@
+/* You can add global variables to this file*/
+/*colors*/
+/*font*/
+/*transitions*/
+/* screen width for media queries*/
+/*common styles*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* all divs are relative by default*/
+div {
+  position: relative;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  padding: 0;
+  font: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.contacts-filter {
+  padding: 41px 0 12px;
+  width: 1251px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts-filter-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.5% 66.5%;
+      grid-template-columns: 33.5% 66.5%;
+  height: 28px;
+  width: 100%;
+  background: #ffffff;
+  opacity: 0.9;
+  border: 0.7px solid #6E767D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 2.8px 14.8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 2.8px 14.8px rgba(0, 0, 0, 0.07);
+  border-radius: 72px;
+  padding: 0 10px;
+}
+
+.contacts-filter-form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.contacts-filter-form__container:first-child {
+  position: relative;
+}
+
+.contacts-filter-form__container:first-child::after {
+  content: "";
+  -webkit-transform: matrix(0, -1, 1, -0.04, 0, 0);
+          transform: matrix(0, -1, 1, -0.04, 0, 0);
+  border-top: 1px solid #7C8389;
+  width: 27px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 48%;
+}
+
+.contacts-filter-form__select, .contacts-filter-form__input {
+  height: 100%;
+  width: 95%;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(51, 51, 51, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  z-index: 2;
+}
+
+.contacts-filter-form__btn {
+  color: #6E767D;
+  padding-top: 3px;
+}
+
+.contacts-filter-form__arrow {
+  right: 25px;
+  position: absolute;
+  z-index: 1;
+}
+
+.contacts-filter-form__btn, .contacts-filter-form__select {
+  cursor: pointer;
+}
+
+.contacts-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 5px;
+  width: 50%;
+}
+
+.contacts-toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.contacts-toggle-container__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts-toggle-container__toggle_input {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 12px;
+  margin: 0;
+  background: #A6AAAD;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.contacts-toggle-container__toggle_input::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -3.5px;
+  top: -3.5px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  border: 1px solid #D7D7D7;
+}
+
+.contacts-toggle-container__toggle_input:checked::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.contacts-toggle-container__toggle_input:checked {
+  background-color: #6E767D;
+}
+
+.contacts-toggle-container__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.3);
+  padding-left: 3px;
+}
+/*# sourceMappingURL=contacts-filter.component.css.map */

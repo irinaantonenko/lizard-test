@@ -1,0 +1,121 @@
+@import '../../../../variables.scss';
+@import '../../../../mixins.scss';
+@import '../../../../reset.scss';
+
+.contacts-filter {
+    padding: 41px 0 12px;
+    width: 1251px;
+    display: flex;
+}
+.contacts-filter-form {
+    display: grid;
+    grid-template-columns: 33.5% 66.5%;
+    height: 28px;
+    width: 100%;
+    background: $colorWhite;
+    opacity: 0.9;
+    border: 0.7px solid $colorDarkGrey;
+    box-sizing: border-box;
+    box-shadow: 0px 2.8px 14.8px $colorFormShadow;
+    border-radius: 72px; 
+    padding: 0 10px;
+    &__container {
+        @include flex-c-sbtw;
+        width: 100%;
+    }
+    &__container:first-child {
+        position: relative;
+    }
+    &__container:first-child::after {
+        content: "";
+        transform: matrix(0, -1, 1, -0.04, 0, 0);       
+        border-top: 1px solid $colorBlackDevider;
+        width: 27px;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 48%;
+    }
+    &__select, &__input {
+        height: 100%;
+        width: 95%;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: $colorBlackForm;
+        display: flex;
+        align-items: center;
+        appearance: none;
+        z-index: 2;
+    }
+    &__btn {
+        color: $colorDarkGrey;
+        padding-top: 3px;
+    }
+    &__arrow {
+        right: 25px;
+        position: absolute;
+        z-index: 1;
+    }
+    &__btn, &__select {
+        cursor: pointer;
+    }
+}    
+.contacts-toggle {
+    @include flex-c-sbtw;
+    padding-left: 5px;
+    width: 50%;
+}
+.contacts-toggle-container {    
+    display: flex;
+    align-items: center;
+    width: 50%;
+    &__button {
+        @include flex-c-c;
+    }
+    &__toggle_input {
+        transition: 0.3s;
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 12px;
+        margin: 0;
+        background: $colorLightgrey;
+        border-radius: 30px;
+        outline: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: -3.5px; 
+            top: -3.5px;  
+            width: 18px;
+            height: 18px;
+            background-color: $colorWhite;
+            border-radius: 50%;  
+            transform: translateX(0);
+            transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+            border: 1px solid $colorGrey;
+        }
+        &:checked::after {
+            transform: translateX(100%);
+        }
+        &:checked {
+            background-color: $colorDarkGrey;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.15px;
+        color: $colorToggle;
+        padding-left: 3px;
+    }
+}    
