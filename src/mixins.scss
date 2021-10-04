@@ -34,6 +34,15 @@
    align-items: center;
    justify-content: center;
 }
+@mixin flex-c {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-st-st {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}    
 @mixin flex-c-sbtw {
 display: flex;
 align-items: center;
@@ -59,5 +68,16 @@ justify-content: space-between;
 	font-size: 0.75rem;
     line-height: 0.875rem;
 }
+@mixin font-middle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    letter-spacing: 0.15px;
+}
 
-
+@mixin hover {
+    color: $colorPurple;
+    opacity: 0.8;
+    border-color: $colorPurple;
+}

@@ -42,6 +42,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 /* all divs are relative by default*/
@@ -95,13 +96,13 @@ select:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #ffffff;
   width: 100%;
 }
@@ -169,6 +170,7 @@ select:focus {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 8px;
+  cursor: pointer;
 }
 
 .paginator-block-list__item_active {
@@ -176,13 +178,25 @@ select:focus {
 }
 
 .paginator-block-list__button {
+  width: 100%;
+  height: 100%;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
   color: #6E767D;
+  cursor: pointer;
 }
 
 .paginator-block-list__button_active {
   color: #ED1C24;
+}
+
+@media (hover) {
+  .paginator-block-list__item:focus, .paginator-block-list__button:hover, .paginator-block-list__item:hover, .paginator-block-list__button:focus {
+    color: #ED1C24;
+    opacity: 0.8;
+    border-color: #ED1C24;
+  }
 }
 /*# sourceMappingURL=contacts-main.component.css.map */

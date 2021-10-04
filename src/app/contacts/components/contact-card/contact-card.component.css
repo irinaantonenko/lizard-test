@@ -42,6 +42,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 /* all divs are relative by default*/
@@ -122,10 +123,12 @@ select:focus {
 }
 
 .contact-card__header {
+  font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
   letter-spacing: 0.15px;
+  line-height: 24px;
   color: rgba(0, 0, 0, 0.87);
   mix-blend-mode: normal;
   padding-bottom: 10px;
@@ -133,8 +136,8 @@ select:focus {
 
 .contact-card__container {
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   color: #A6AAAD;
   mix-blend-mode: normal;
 }
@@ -146,8 +149,8 @@ select:focus {
 .contact-card__phone, .contact-card__email {
   padding-top: 5px;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   color: #212121;
   mix-blend-mode: normal;
 }

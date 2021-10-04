@@ -42,6 +42,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 /* all divs are relative by default*/
@@ -147,8 +148,8 @@ select:focus {
   width: 95%;
   font-style: italic;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   color: rgba(51, 51, 51, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,10 +260,18 @@ select:focus {
 .contacts-toggle-container__text {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.1875rem;
   letter-spacing: 0.15px;
   color: rgba(0, 0, 0, 0.3);
   padding-left: 3px;
+}
+
+@media (hover) {
+  .contacts-filter-form__arrow:focus, .contacts-filter-form__arrow:hover, .contacts-filter-form__btn:hover, .contacts-filter-form__btn:focus {
+    color: #ED1C24;
+    opacity: 0.8;
+    border-color: #ED1C24;
+  }
 }
 /*# sourceMappingURL=contacts-filter.component.css.map */

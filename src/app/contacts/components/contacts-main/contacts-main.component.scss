@@ -4,9 +4,8 @@
 
 .contacts-container {
     @include wrapper;
-    display: flex;
+    @include flex-c;
     flex-direction: column;
-    align-items: center;
     background-color: $colorWhite;
     width: 100%;
 }
@@ -31,17 +30,25 @@
         border-radius: 50%;
         @include flex-c-c;
         margin: 8px;
+        cursor: pointer;
         &_active {
             border-color: $colorPurple;
         }
     }
     &__button {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
+        width: 100%;
+        height: 100%;
+        @include font-small; 
+        font-weight: bold;        
         color: $colorDarkGrey;
+        cursor: pointer;
         &_active {
             color: $colorPurple;
         }
+    }
+}
+@media (hover) {
+    .paginator-block-list__item:focus, .paginator-block-list__button:hover, .paginator-block-list__item:hover, .paginator-block-list__button:focus {
+        @include hover;
     }
 }

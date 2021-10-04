@@ -3,9 +3,7 @@
 @import '../../../../reset.scss';
 
 .contact-card {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    @include flex-st-st;
     width: 100%;
     padding-bottom: 30px;
     &__image_wrap {
@@ -24,18 +22,14 @@
         margin-left: 28px;
     }
     &__header {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.15px;
+        @include font-middle;
+        line-height: 24px;      
         color: $colorBlackCard;        
         mix-blend-mode: normal;    
         padding-bottom: 10px; 
     }
     &__container { 
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;        
+        @include font-small;        
         color: $colorLightgrey;        
         mix-blend-mode: normal;
     }
@@ -44,9 +38,7 @@
     }
     &__phone, &__email {
         padding-top: 5px;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
+        @include font-small;
         color: $colorDark;
         mix-blend-mode: normal;
     }
