@@ -89,42 +89,70 @@ select:focus {
   outline: none;
 }
 
-.contacts-container {
-  max-width: 1395px;
-  margin: 0 auto 1.45rem;
+.contact-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffffff;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
+  padding-bottom: 30px;
 }
 
-@media (max-width: 1440px) {
-  .contacts-container {
-    margin: 0 1.5rem 1.45rem;
-  }
+.contact-card__image_wrap {
+  height: 67px;
+  width: 67px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-@media (max-width: 375px) {
-  .contacts-container {
-    margin: 0;
-  }
-}
-
-.contacts-cards {
-  display: -ms-grid;
-  display: grid;
+.contact-card__image {
+  height: 100%;
   width: 100%;
-  -ms-grid-columns: (25%)[3];
-      grid-template-columns: repeat(3, 25%);
-  gap: 0 60px;
-  padding: 28px 93px 44px;
+  background-position: center;
+  background-size: cover;
 }
-/*# sourceMappingURL=contacts-main.component.css.map */
+
+.contact-card__content {
+  margin-left: 28px;
+}
+
+.contact-card__header {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+  mix-blend-mode: normal;
+  padding-bottom: 10px;
+}
+
+.contact-card__container {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #A6AAAD;
+  mix-blend-mode: normal;
+}
+
+.contact-card__organization, .contact-card__department, .contact-card__position {
+  padding-bottom: 5px;
+}
+
+.contact-card__phone, .contact-card__email {
+  padding-top: 5px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #212121;
+  mix-blend-mode: normal;
+}
+
+.contact-card__email {
+  padding-top: 0px;
+}
+/*# sourceMappingURL=contact-card.component.css.map */

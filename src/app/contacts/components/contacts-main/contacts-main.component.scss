@@ -8,4 +8,12 @@
     flex-direction: column;
     align-items: center;
     background-color: $colorWhite;
+    width: 100%;
+}
+.contacts-cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 25%);
+    gap: 0 60px;
+    padding: 28px 93px 44px;    
 }

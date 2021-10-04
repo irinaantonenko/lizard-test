@@ -1,5 +1,7 @@
 <div class="contact-card">
-	<div class="contact-card__image" [ngStyle]="{'background-image':'url('+profilePhotoUrl+')'}">
+	<div class="contact-card__image_wrap">
+		<div class="contact-card__image" [ngStyle]="{'background-image':'url('+profilePhotoUrl+')'}">
+		</div>
 	</div>
 	<div class="contact-card__content">
 		<h3 class="contact-card__header">{{ contact.lastName }} {{ contact.firstName }} {{ contact.middleName }}</h3>

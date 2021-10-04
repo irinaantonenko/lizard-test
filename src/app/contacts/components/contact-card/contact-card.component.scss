@@ -1,0 +1,56 @@
+@import '../../../../variables.scss';
+@import '../../../../mixins.scss';
+@import '../../../../reset.scss';
+
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 30px;
+    &__image_wrap {
+        height: 67px;
+        width: 67px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__image {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    &__content {
+        margin-left: 28px;
+    }
+    &__header {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: $colorBlackCard;        
+        mix-blend-mode: normal;    
+        padding-bottom: 10px; 
+    }
+    &__container { 
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;        
+        color: $colorLightgrey;        
+        mix-blend-mode: normal;
+    }
+    &__organization, &__department, &__position {
+        padding-bottom: 5px;
+    }
+    &__phone, &__email {
+        padding-top: 5px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: $colorDark;
+        mix-blend-mode: normal;
+    }
+    &__email {
+        padding-top: 0px;
+    }
+}

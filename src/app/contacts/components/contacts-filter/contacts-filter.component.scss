@@ -3,14 +3,14 @@
 @import '../../../../reset.scss';
 
 .contacts-filter {
-    padding: 41px 0 12px;
-    width: 1251px;
-    display: flex;
+    padding: 41px 20px 12px;
+    width: 100%;
+    min-width: 1251px;
+    min-height: 28px;
 }
 .contacts-filter-form {
     display: grid;
     grid-template-columns: 33.5% 66.5%;
-    height: 28px;
     width: 100%;
     background: $colorWhite;
     opacity: 0.9;
@@ -64,7 +64,7 @@
 }    
 .contacts-toggle {
     @include flex-c-sbtw;
-    padding-left: 5px;
+    padding-left: 25px;
     width: 50%;
 }
 .contacts-toggle-container {    
