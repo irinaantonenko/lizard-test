@@ -17,3 +17,31 @@
     gap: 0 60px;
     padding: 28px 93px 44px;    
 }
+.paginator-block {
+    padding: 14px 0px 37px; 
+    @include flex-c-c;
+}
+.paginator-block-list {
+    width: 100%;
+    @include flex-c-sbtw;
+    &__item {
+        width: 25px;
+        height: 25px;
+        border: 1.28px solid $colorDarkGrey;
+        border-radius: 50%;
+        @include flex-c-c;
+        margin: 8px;
+        &_active {
+            border-color: $colorPurple;
+        }
+    }
+    &__button {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: $colorDarkGrey;
+        &_active {
+            color: $colorPurple;
+        }
+    }
+}

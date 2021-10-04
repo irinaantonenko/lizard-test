@@ -127,4 +127,62 @@ select:focus {
   gap: 0 60px;
   padding: 28px 93px 44px;
 }
+
+.paginator-block {
+  padding: 14px 0px 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paginator-block-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.paginator-block-list__item {
+  width: 25px;
+  height: 25px;
+  border: 1.28px solid #6E767D;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 8px;
+}
+
+.paginator-block-list__item_active {
+  border-color: #ED1C24;
+}
+
+.paginator-block-list__button {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6E767D;
+}
+
+.paginator-block-list__button_active {
+  color: #ED1C24;
+}
 /*# sourceMappingURL=contacts-main.component.css.map */
