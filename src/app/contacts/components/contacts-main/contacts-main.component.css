@@ -109,7 +109,25 @@ select:focus {
 
 @media (max-width: 1440px) {
   .contacts-container {
-    margin: 0 1.5rem 1.45rem;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacts-container {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts-container {
+    max-width: 390px;
   }
 }
 
@@ -125,12 +143,42 @@ select:focus {
   width: 100%;
   -ms-grid-columns: (25%)[3];
       grid-template-columns: repeat(3, 25%);
-  gap: 0 60px;
-  padding: 28px 93px 44px;
+  gap: 0 3.75rem;
+  padding: 1.75rem 5.8125rem 2.75rem;
+}
+
+@media (max-width: 1440px) {
+  .contacts-cards {
+    padding: 1.75rem 3rem 2.75rem;
+    -ms-grid-columns: (30%)[3];
+        grid-template-columns: repeat(3, 30%);
+    gap: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacts-cards {
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-cards {
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
+    padding: 1.75rem 5rem 2.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts-cards {
+    padding: 1.75rem 2rem 2.75rem;
+  }
 }
 
 .paginator-block {
-  padding: 14px 0px 37px;
+  padding: 0.875rem 0px 2.3125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,8 +204,8 @@ select:focus {
 }
 
 .paginator-block-list__item {
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   border: 1.28px solid #6E767D;
   border-radius: 50%;
   display: -webkit-box;
@@ -169,7 +217,7 @@ select:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 8px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 

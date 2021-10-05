@@ -4,12 +4,9 @@
 
 .contacts-header {
     @include flex-c-c;
-    padding: 24px 0;
+    padding: 1.5rem 0;
     &__text {
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 26px;        
-        letter-spacing: 1px;        
+        @include font-big;      
         color: $colorBlackHeader;
         text-transform: uppercase;
     }
@@ -18,7 +15,23 @@
         position: absolute;
         z-index: 2;
         bottom: 0;
-        width: 1872px;        
+        min-width: 117rem;  
+        width: 95%;      
         border-top: 3px solid $colorGrey;
+        @include _1920 {
+            min-width: 87.1875rem;
+        }
+        @include _1440 {
+            min-width: 60rem;
+        }
+        @include _1024 {
+            min-width: 40rem;
+        }
+        @include _768 {
+            min-width: 30rem;
+        }
+        @include _600 {
+            min-width: 10rem;
+        }
     }
 }

@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,mCAAmC;AA8BnC,iBAAiB",
+    "mappings": "AAAA,mCAAmC;AAmCnC,iBAAiB",
     "sources": [
         "mixins.scss"
     ],

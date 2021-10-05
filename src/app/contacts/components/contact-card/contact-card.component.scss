@@ -5,10 +5,10 @@
 .contact-card {
     @include flex-st-st;
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
     &__image_wrap {
-        height: 67px;
-        width: 67px;
+        height: 4.1875rem;
+        width: 4.1875rem;
         border-radius: 50%;
         overflow: hidden;
     }
@@ -19,14 +19,14 @@
         background-size: cover;
     }
     &__content {
-        margin-left: 28px;
+        margin-left: 1.75rem;
     }
     &__header {
         @include font-middle;
-        line-height: 24px;      
+        line-height: 1.5rem;      
         color: $colorBlackCard;        
         mix-blend-mode: normal;    
-        padding-bottom: 10px; 
+        padding-bottom: 0.625rem; 
     }
     &__container { 
         @include font-small;        
@@ -34,10 +34,10 @@
         mix-blend-mode: normal;
     }
     &__organization, &__department, &__position {
-        padding-bottom: 5px;
+        padding-bottom: 0.3125rem;
     }
     &__phone, &__email {
-        padding-top: 5px;
+        padding-top: 0.3125rem;
         @include font-small;
         color: $colorDark;
         mix-blend-mode: normal;

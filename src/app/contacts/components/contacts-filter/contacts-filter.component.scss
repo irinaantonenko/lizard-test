@@ -3,10 +3,26 @@
 @import '../../../../reset.scss';
 
 .contacts-filter {
-    padding: 41px 20px 12px;
+    padding: 2.5625rem 1.25rem 0.75rem;
     width: 100%;
-    min-width: 1251px;
-    min-height: 28px;
+    min-width: 78.1875rem;
+    min-height: 1.75rem;
+    @include _1440 {
+		min-width: 60rem;
+        padding: 2.5625rem 0rem 0.75rem;
+	}
+    @include _1024 {
+		min-width: 40rem;
+	}
+    @include _768 {
+		min-width: 30rem;
+	}
+    @include _600 {
+		min-width: 20rem;
+	}
+    @include _375 {
+		min-width: 18rem;
+	}
 }
 .contacts-filter-form {
     display: grid;
@@ -16,9 +32,15 @@
     opacity: 0.9;
     border: 0.7px solid $colorDarkGrey;
     box-sizing: border-box;
-    box-shadow: 0px 2.8px 14.8px $colorFormShadow;
-    border-radius: 72px; 
-    padding: 0 10px;
+    box-shadow: 0px 2.8px 0.925rem $colorFormShadow;
+    border-radius: 4.25rem; 
+    padding: 0 0.625rem;   
+    @include _600 {
+		grid-template-columns: repeat(2, 50%);
+	}
+    @include _375 {
+		grid-template-columns: 45% 55%;
+	}
     &__container {
         @include flex-c-sbtw;
         width: 100%;
@@ -30,7 +52,7 @@
         content: "";
         transform: matrix(0, -1, 1, -0.04, 0, 0);       
         border-top: 1px solid $colorBlackDevider;
-        width: 27px;
+        width: 1.6875rem;
         position: absolute;
         z-index: 2;
         right: 0;
@@ -45,13 +67,16 @@
         @include flex-c;
         appearance: none;
         z-index: 2;
+        @include _600 {
+            font-size: 0.625rem;
+        }
     }
     &__btn {
         color: $colorDarkGrey;
         padding-top: 3px;
     }
     &__arrow {
-        right: 25px;
+        right: 1.5625rem;
         position: absolute;
         z-index: 1;
     }
@@ -61,8 +86,16 @@
 }    
 .contacts-toggle {
     @include flex-c-sbtw;
-    padding-left: 25px;
+    padding-left: 1.5625rem;
     width: 50%;
+    @include _1440 {
+		width: 90%;
+	}
+    @include _768 {
+        flex-direction: column;
+        width: 100%;
+        padding-left:0;
+    }
 }
 .contacts-toggle-container {    
     @include flex-c;
@@ -74,11 +107,11 @@
         transition: $transition;
         position: relative;
         display: inline-block;
-        width: 30px;
-        height: 12px;
+        width: 1.875rem;
+        height: 0.75rem;
         margin: 0;
         background: $colorLightgrey;
-        border-radius: 30px;
+        border-radius: 1.875rem;
         outline: none;
         cursor: pointer;
         -webkit-appearance: none;
@@ -90,8 +123,8 @@
             position: absolute;
             left: -3.5px; 
             top: -3.5px;  
-            width: 18px;
-            height: 18px;
+            width: 1.125rem;
+            height: 1.125rem;
             background-color: $colorWhite;
             border-radius: 50%;  
             transform: translateX(0);
@@ -109,10 +142,17 @@
         @include font-middle;
         color: $colorToggle;
         padding-left: 3px;
+        @include _768 {
+            @include font-small;
+            padding-left: 2rem;
+        }
+        @include _600 {
+            @include font-small;            
+        }
     }
 }    
 @media (hover) {
-    .contacts-filter-form__arrow:focus, .contacts-filter-form__arrow:hover, .contacts-filter-form__btn:hover, .contacts-filter-form__btn:focus {
+    .contacts-filter-form:focus, .contacts-filter-form:hover, .contacts-filter-form__arrow:focus, .contacts-filter-form__arrow:hover, .contacts-filter-form__btn:hover, .contacts-filter-form__btn:focus {
         @include hover;
     }
 }
